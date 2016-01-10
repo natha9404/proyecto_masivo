@@ -9,12 +9,12 @@ package GUI_proyecto_masivo;
  *
  * @author natha
  */
-public class ventana_empleado extends javax.swing.JFrame {
+public class Ventana_empleado extends javax.swing.JFrame {
 
     /**
      * Creates new form ventana_empleado
      */
-    public ventana_empleado() {
+    public Ventana_empleado() {
         initComponents();
     }
 
@@ -199,7 +199,7 @@ public class ventana_empleado extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //Abre la ventana registrar usuarios
-        registrar_empleado obj_registrar_user = new registrar_empleado();
+        Registrar_empleado obj_registrar_user = new Registrar_empleado();
         obj_registrar_user.setVisible(true);
 
     }//GEN-LAST:event_boton_adduserActionPerformed
@@ -207,7 +207,7 @@ public class ventana_empleado extends javax.swing.JFrame {
     private void boton_modificarusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_modificarusuarioActionPerformed
         // TODO add your handling code here:
         //Abre la ventana modificar usuario
-        modificar_empleado obj_mod_user = new modificar_empleado();
+        Modificar_empleado obj_mod_user = new Modificar_empleado();
         obj_mod_user.setVisible(true);
     }//GEN-LAST:event_boton_modificarusuarioActionPerformed
 
@@ -215,7 +215,7 @@ public class ventana_empleado extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //abre al ventana actualizar usuario
-        buscar_empleado obj_actua_user = new buscar_empleado();
+        Buscar_empleado obj_actua_user = new Buscar_empleado();
         obj_actua_user.setVisible(true);
 
     }//GEN-LAST:event_boton_actualizarusuarioActionPerformed
@@ -236,7 +236,7 @@ public class ventana_empleado extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //Abre la ventana registrar usuarios
-        registrar_empleado obj_registrar_user = new registrar_empleado();
+        Registrar_empleado obj_registrar_user = new Registrar_empleado();
         obj_registrar_user.setVisible(true);
 
     }//GEN-LAST:event_boton_adduser1ActionPerformed
@@ -244,7 +244,7 @@ public class ventana_empleado extends javax.swing.JFrame {
     private void boton_modificarusuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_modificarusuario1ActionPerformed
         // TODO add your handling code here:
         //Abre la ventana modificar usuario
-        modificar_empleado obj_mod_user = new modificar_empleado();
+        Modificar_empleado obj_mod_user = new Modificar_empleado();
         obj_mod_user.setVisible(true);
     }//GEN-LAST:event_boton_modificarusuario1ActionPerformed
 
@@ -259,7 +259,7 @@ public class ventana_empleado extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //abre al ventana actualizar usuario
-        buscar_empleado obj_actua_user = new buscar_empleado();
+        Buscar_empleado obj_actua_user = new Buscar_empleado();
         obj_actua_user.setVisible(true);
 
     }//GEN-LAST:event_boton_buscarempleadoActionPerformed
@@ -281,20 +281,21 @@ public class ventana_empleado extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventana_empleado().setVisible(true);
+                new Ventana_empleado().setVisible(true);
             }
         });
     }

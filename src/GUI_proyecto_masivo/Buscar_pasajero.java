@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author natha
  */
-public class modificar_pasajero extends javax.swing.JFrame {
+public class Buscar_pasajero extends javax.swing.JFrame {
 
     /**
-     * Creates new form modificar_pasajero
+     * Creates new form buscar_pasajero
      */
-    public modificar_pasajero() {
+    public Buscar_pasajero() {
         initComponents();
     }
 
@@ -30,7 +30,6 @@ public class modificar_pasajero extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         campo_registro_nombre5 = new javax.swing.JTextField();
@@ -43,19 +42,17 @@ public class modificar_pasajero extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         boton_registrar_usuarios5 = new javax.swing.JToggleButton();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/metrocali11.jpg"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel43.setText("MODIFICAR PASAJERO");
+        jLabel43.setText("CONSULTAR PASAJERO");
 
-        campo_registro_nombre5.setEnabled(false);
+        campo_registro_nombre5.setEditable(false);
         campo_registro_nombre5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_nombre5ActionPerformed(evt);
@@ -79,14 +76,14 @@ public class modificar_pasajero extends javax.swing.JFrame {
 
         jLabel41.setText(" Dirección:");
 
-        campo_registro_direccion5.setEnabled(false);
+        campo_registro_direccion5.setEditable(false);
         campo_registro_direccion5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_direccion5ActionPerformed(evt);
             }
         });
 
-        campo_registro_telefono5.setEnabled(false);
+        campo_registro_telefono5.setEditable(false);
         campo_registro_telefono5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_telefono5ActionPerformed(evt);
@@ -124,7 +121,7 @@ public class modificar_pasajero extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel42)
                             .addComponent(jLabel41))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(campo_registro_direccion5, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
                             .addComponent(campo_registro_telefono5, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -172,8 +169,11 @@ public class modificar_pasajero extends javax.swing.JFrame {
                     .addComponent(jLabel42))
                 .addGap(18, 18, 18)
                 .addComponent(boton_registrar_usuarios5)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/metrocali11.jpg"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -284,20 +284,21 @@ public class modificar_pasajero extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(modificar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(modificar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(modificar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(modificar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new modificar_pasajero().setVisible(true);
+                new Buscar_pasajero().setVisible(true);
             }
         });
     }

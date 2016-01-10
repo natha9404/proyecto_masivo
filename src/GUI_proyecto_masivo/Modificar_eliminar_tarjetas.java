@@ -11,12 +11,12 @@ import java.awt.Toolkit;
  *
  * @author natha
  */
-public class modificar_eliminar_tarjetas extends javax.swing.JFrame {
+public class Modificar_eliminar_tarjetas extends javax.swing.JFrame {
 
     /**
      * Creates new form modificar_eliminar_tarjetas
      */
-    public modificar_eliminar_tarjetas() {
+    public Modificar_eliminar_tarjetas() {
         initComponents();
     }
 
@@ -240,20 +240,21 @@ public class modificar_eliminar_tarjetas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modificar_eliminar_tarjetas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new modificar_eliminar_tarjetas().setVisible(true);
+                new Modificar_eliminar_tarjetas().setVisible(true);
             }
         });
     }

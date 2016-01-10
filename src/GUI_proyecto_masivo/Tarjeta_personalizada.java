@@ -11,12 +11,12 @@ import java.awt.Toolkit;
  *
  * @author natha
  */
-public class tarjeta_generica extends javax.swing.JFrame {
+public class Tarjeta_personalizada extends javax.swing.JFrame {
 
     /**
-     * Creates new form tarjeta_generica
+     * Creates new form tarjeta_personalizada
      */
-    public tarjeta_generica() {
+    public Tarjeta_personalizada() {
         initComponents();
     }
 
@@ -38,9 +38,12 @@ public class tarjeta_generica extends javax.swing.JFrame {
         saldo_tarjeta = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         estado_tarjeta = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        vender_tarjeta = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        combo_estacion = new javax.swing.JComboBox();
+        combo_Estacion = new javax.swing.JComboBox();
+        jLabel6 = new javax.swing.JLabel();
+        cedula_pasajero = new javax.swing.JTextField();
+        verificar_pasajero = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,7 +53,7 @@ public class tarjeta_generica extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel43.setText("VENTA TARJETA GENERICA");
+        jLabel43.setText("VENTA TARJETA PERSONALIZADA");
 
         jLabel1.setText("No. de Tarjeta:");
 
@@ -74,41 +77,62 @@ public class tarjeta_generica extends javax.swing.JFrame {
         estado_tarjeta.setEditable(false);
         estado_tarjeta.setText("Activa");
 
-        jButton1.setText("Vender Tarjeta");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        vender_tarjeta.setText("Vender Tarjeta");
+        vender_tarjeta.setEnabled(false);
+        vender_tarjeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                vender_tarjetaActionPerformed(evt);
             }
         });
 
         jLabel5.setText("Estación de Compra:");
 
+        jLabel6.setText("Cedula del pasajero");
+
+        cedula_pasajero.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                cedula_pasajeroKeyTyped(evt);
+            }
+        });
+
+        verificar_pasajero.setText("Verificar Pasajero");
+        verificar_pasajero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verificar_pasajeroActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(112, 112, 112)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel43)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(86, 86, 86))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(verificar_pasajero))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addComponent(vender_tarjeta))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(num_tarjeta)
                             .addComponent(saldo_tarjeta, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
                             .addComponent(estado_tarjeta)
-                            .addComponent(combo_estacion, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(combo_Estacion, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cedula_pasajero))))
                 .addGap(36, 36, 36))
         );
         jPanel1Layout.setVerticalGroup(
@@ -116,7 +140,13 @@ public class tarjeta_generica extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel43)
-                .addGap(23, 23, 23)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cedula_pasajero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addComponent(verificar_pasajero)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(num_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -131,9 +161,9 @@ public class tarjeta_generica extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(combo_estacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                    .addComponent(combo_Estacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(vender_tarjeta)
                 .addGap(21, 21, 21))
         );
 
@@ -149,8 +179,7 @@ public class tarjeta_generica extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -158,22 +187,34 @@ public class tarjeta_generica extends javax.swing.JFrame {
 
     private void saldo_tarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saldo_tarjetaActionPerformed
         // TODO add your handling code here:
-        
-        
+
     }//GEN-LAST:event_saldo_tarjetaActionPerformed
 
     private void saldo_tarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saldo_tarjetaKeyTyped
         // TODO add your handling code here:
-        
-         if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
+
+        if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
             Toolkit.getDefaultToolkit().beep();
             evt.consume();
         }
     }//GEN-LAST:event_saldo_tarjetaKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void vender_tarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vender_tarjetaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_vender_tarjetaActionPerformed
+
+    private void verificar_pasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificar_pasajeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verificar_pasajeroActionPerformed
+
+    private void cedula_pasajeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cedula_pasajeroKeyTyped
+        // TODO add your handling code here:
+         if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
+            Toolkit.getDefaultToolkit().beep();
+            evt.consume();
+        }
+        
+    }//GEN-LAST:event_cedula_pasajeroKeyTyped
 
     /**
      * @param args the command line arguments
@@ -192,36 +233,40 @@ public class tarjeta_generica extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(tarjeta_generica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tarjeta_personalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(tarjeta_generica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tarjeta_personalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(tarjeta_generica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tarjeta_personalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(tarjeta_generica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tarjeta_personalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new tarjeta_generica().setVisible(true);
+                new Tarjeta_personalizada().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox combo_estacion;
+    private javax.swing.JTextField cedula_pasajero;
+    private javax.swing.JComboBox combo_Estacion;
     private javax.swing.JTextField estado_tarjeta;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField num_tarjeta;
     private javax.swing.JTextField saldo_tarjeta;
+    private javax.swing.JButton vender_tarjeta;
+    private javax.swing.JButton verificar_pasajero;
     // End of variables declaration//GEN-END:variables
 }

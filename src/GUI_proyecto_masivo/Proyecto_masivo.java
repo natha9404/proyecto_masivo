@@ -16,6 +16,7 @@ public class Proyecto_masivo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
     }
     
 }

@@ -9,12 +9,12 @@ package GUI_proyecto_masivo;
  *
  * @author natha
  */
-public class ventana_pasajeros extends javax.swing.JFrame {
+public class Ventana_pasajeros extends javax.swing.JFrame {
 
     /**
      * Creates new form ventana_pasajeros
      */
-    public ventana_pasajeros() {
+    public Ventana_pasajeros() {
         initComponents();
     }
 
@@ -155,14 +155,14 @@ public class ventana_pasajeros extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //Abre la ventana registrar usuarios
-        registrar_empleado obj_registrar_user = new registrar_empleado();
+        Registrar_empleado obj_registrar_user = new Registrar_empleado();
         obj_registrar_user.setVisible(true);
     }//GEN-LAST:event_registrar_pasajeroActionPerformed
 
     private void modificar_pasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_pasajeroActionPerformed
         // TODO add your handling code here:
         //Abre la ventana modificar usuario
-        modificar_empleado obj_mod_user = new modificar_empleado();
+        Modificar_empleado obj_mod_user = new Modificar_empleado();
         obj_mod_user.setVisible(true);
     }//GEN-LAST:event_modificar_pasajeroActionPerformed
 
@@ -177,7 +177,7 @@ public class ventana_pasajeros extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //abre al ventana actualizar usuario
-        buscar_empleado obj_actua_user = new buscar_empleado();
+        Buscar_empleado obj_actua_user = new Buscar_empleado();
         obj_actua_user.setVisible(true);
     }//GEN-LAST:event_consultar_pasajeroActionPerformed
 
@@ -198,20 +198,21 @@ public class ventana_pasajeros extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_pasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventana_pasajeros().setVisible(true);
+                new Ventana_pasajeros().setVisible(true);
             }
         });
     }

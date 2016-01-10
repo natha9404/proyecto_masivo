@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author natha
  */
-public class registrar_pasajero extends javax.swing.JFrame {
+public class Registrar_pasajero extends javax.swing.JFrame {
 
     /**
      * Creates new form registrar_pasajero
      */
-    public registrar_pasajero() {
+    public Registrar_pasajero() {
         initComponents();
     }
 
@@ -59,12 +59,12 @@ public class registrar_pasajero extends javax.swing.JFrame {
         jLabel37 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        campo_registro_nombre5 = new javax.swing.JTextField();
+        campo_registro_nombre = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
-        campo_registro_cedula5 = new javax.swing.JTextField();
+        campo_registro_cedula = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
-        campo_registro_direccion5 = new javax.swing.JTextField();
-        campo_registro_telefono5 = new javax.swing.JTextField();
+        campo_registro_direccion = new javax.swing.JTextField();
+        campo_registro_telefono = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         boton_registrar_usuarios5 = new javax.swing.JToggleButton();
@@ -330,41 +330,41 @@ public class registrar_pasajero extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        campo_registro_nombre5.addActionListener(new java.awt.event.ActionListener() {
+        campo_registro_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_registro_nombre5ActionPerformed(evt);
+                campo_registro_nombreActionPerformed(evt);
             }
         });
 
         jLabel38.setText("* Nombre Completo:");
 
-        campo_registro_cedula5.addActionListener(new java.awt.event.ActionListener() {
+        campo_registro_cedula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_registro_cedula5ActionPerformed(evt);
+                campo_registro_cedulaActionPerformed(evt);
             }
         });
-        campo_registro_cedula5.addKeyListener(new java.awt.event.KeyAdapter() {
+        campo_registro_cedula.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                campo_registro_cedula5KeyTyped(evt);
+                campo_registro_cedulaKeyTyped(evt);
             }
         });
 
         jLabel39.setText("* Cedula de Ciudadanía:");
 
-        campo_registro_direccion5.addActionListener(new java.awt.event.ActionListener() {
+        campo_registro_direccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_registro_direccion5ActionPerformed(evt);
+                campo_registro_direccionActionPerformed(evt);
             }
         });
 
-        campo_registro_telefono5.addActionListener(new java.awt.event.ActionListener() {
+        campo_registro_telefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_registro_telefono5ActionPerformed(evt);
+                campo_registro_telefonoActionPerformed(evt);
             }
         });
-        campo_registro_telefono5.addKeyListener(new java.awt.event.KeyAdapter() {
+        campo_registro_telefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                campo_registro_telefono5KeyTyped(evt);
+                campo_registro_telefonoKeyTyped(evt);
             }
         });
 
@@ -393,7 +393,7 @@ public class registrar_pasajero extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(0, 317, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(boton_registrar_usuarios5)
                         .addGap(7, 7, 7))
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -405,16 +405,16 @@ public class registrar_pasajero extends javax.swing.JFrame {
                                     .addComponent(jLabel39))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(campo_registro_nombre5, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(campo_registro_cedula5, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(campo_registro_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(campo_registro_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel42)
                                     .addComponent(jLabel41))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(campo_registro_direccion5, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
-                                    .addComponent(campo_registro_telefono5, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(campo_registro_direccion, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                                    .addComponent(campo_registro_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(64, 64, 64))
         );
         jPanel6Layout.setVerticalGroup(
@@ -425,18 +425,18 @@ public class registrar_pasajero extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel38)
-                    .addComponent(campo_registro_nombre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(campo_registro_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
-                    .addComponent(campo_registro_cedula5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(campo_registro_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(campo_registro_direccion5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campo_registro_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel41))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(campo_registro_telefono5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campo_registro_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel42))
                 .addGap(53, 53, 53)
                 .addComponent(boton_registrar_usuarios5)
@@ -614,39 +614,26 @@ public class registrar_pasajero extends javax.swing.JFrame {
 
     }//GEN-LAST:event_boton_registrar_usuarios4ActionPerformed
 
-    private void campo_registro_nombre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_nombre5ActionPerformed
+    private void campo_registro_nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_nombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campo_registro_nombre5ActionPerformed
+    }//GEN-LAST:event_campo_registro_nombreActionPerformed
 
-    private void campo_registro_cedula5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_cedula5ActionPerformed
+    private void campo_registro_direccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_direccionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campo_registro_cedula5ActionPerformed
+    }//GEN-LAST:event_campo_registro_direccionActionPerformed
 
-    private void campo_registro_cedula5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_registro_cedula5KeyTyped
+    private void campo_registro_telefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_telefonoActionPerformed
         // TODO add your handling code here:
+    }//GEN-LAST:event_campo_registro_telefonoActionPerformed
 
-        if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
-            Toolkit.getDefaultToolkit().beep();
-            evt.consume();
-        }
-    }//GEN-LAST:event_campo_registro_cedula5KeyTyped
-
-    private void campo_registro_direccion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_direccion5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campo_registro_direccion5ActionPerformed
-
-    private void campo_registro_telefono5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_telefono5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campo_registro_telefono5ActionPerformed
-
-    private void campo_registro_telefono5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_registro_telefono5KeyTyped
+    private void campo_registro_telefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_registro_telefonoKeyTyped
         // TODO add your handling code here:
 
         if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
             Toolkit.getDefaultToolkit().beep();
             evt.consume();
         }
-    }//GEN-LAST:event_campo_registro_telefono5KeyTyped
+    }//GEN-LAST:event_campo_registro_telefonoKeyTyped
 
     private void boton_registrar_usuarios5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_registrar_usuarios5ActionPerformed
         // TODO add your handling code here:
@@ -689,6 +676,19 @@ public class registrar_pasajero extends javax.swing.JFrame {
 
     }//GEN-LAST:event_boton_registrar_usuarios5ActionPerformed
 
+    private void campo_registro_cedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_registro_cedulaKeyTyped
+        // TODO add your handling code here:
+
+        if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
+            Toolkit.getDefaultToolkit().beep();
+            evt.consume();
+        }
+    }//GEN-LAST:event_campo_registro_cedulaKeyTyped
+
+    private void campo_registro_cedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_registro_cedulaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campo_registro_cedulaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -706,78 +706,45 @@ public class registrar_pasajero extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_pasajero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new registrar_pasajero().setVisible(true);
+                new Registrar_pasajero().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox ComboBox_registro_rol;
-    private javax.swing.JComboBox ComboBox_registro_rol1;
-    private javax.swing.JComboBox ComboBox_registro_rol2;
     private javax.swing.JComboBox ComboBox_registro_rol3;
     private javax.swing.JComboBox ComboBox_registro_rol4;
-    private javax.swing.JToggleButton boton_registrar_usuarios;
-    private javax.swing.JToggleButton boton_registrar_usuarios1;
-    private javax.swing.JToggleButton boton_registrar_usuarios2;
     private javax.swing.JToggleButton boton_registrar_usuarios3;
     private javax.swing.JToggleButton boton_registrar_usuarios4;
     private javax.swing.JToggleButton boton_registrar_usuarios5;
     private javax.swing.JTextField campo_registro_cedula;
-    private javax.swing.JTextField campo_registro_cedula1;
-    private javax.swing.JTextField campo_registro_cedula2;
     private javax.swing.JTextField campo_registro_cedula3;
     private javax.swing.JTextField campo_registro_cedula4;
-    private javax.swing.JTextField campo_registro_cedula5;
     private javax.swing.JTextField campo_registro_direccion;
-    private javax.swing.JTextField campo_registro_direccion1;
-    private javax.swing.JTextField campo_registro_direccion2;
     private javax.swing.JTextField campo_registro_direccion3;
     private javax.swing.JTextField campo_registro_direccion4;
-    private javax.swing.JTextField campo_registro_direccion5;
     private javax.swing.JTextField campo_registro_nombre;
-    private javax.swing.JTextField campo_registro_nombre1;
-    private javax.swing.JTextField campo_registro_nombre2;
     private javax.swing.JTextField campo_registro_nombre3;
     private javax.swing.JTextField campo_registro_nombre4;
-    private javax.swing.JTextField campo_registro_nombre5;
     private javax.swing.JTextField campo_registro_telefono;
-    private javax.swing.JTextField campo_registro_telefono1;
-    private javax.swing.JTextField campo_registro_telefono2;
     private javax.swing.JTextField campo_registro_telefono3;
     private javax.swing.JTextField campo_registro_telefono4;
-    private javax.swing.JTextField campo_registro_telefono5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
@@ -796,11 +763,6 @@ public class registrar_pasajero extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;

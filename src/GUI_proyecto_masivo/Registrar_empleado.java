@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  *
  * @author natha
  */
-public class buscar_empleado extends javax.swing.JFrame {
+public class Registrar_empleado extends javax.swing.JFrame {
 
     /**
-     * Creates new form buscar_empleado
+     * Creates new form registrar_empleado
      */
-    public buscar_empleado() {
+    public Registrar_empleado() {
         initComponents();
     }
 
@@ -30,7 +30,6 @@ public class buscar_empleado extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         campo_registro_nombre = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
@@ -44,18 +43,14 @@ public class buscar_empleado extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         boton_registrar_usuarios = new javax.swing.JToggleButton();
         jLabel14 = new javax.swing.JLabel();
-        buscar_empleado_modificar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Proyecto Sistema de Transporte Masivo - Busqueda de Empleados");
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_proyecto_masivo/metrocali11.jpg"))); // NOI18N
-        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        setTitle("Proyecto Sistema de Transporte Masivo - Registro de Empleados");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        campo_registro_nombre.setEditable(false);
         campo_registro_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_nombreActionPerformed(evt);
@@ -75,20 +70,18 @@ public class buscar_empleado extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setText("Cedula de Ciudadanía:");
+        jLabel10.setText("* Cedula de Ciudadanía:");
 
         ComboBox_registro_rol.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Director de Estación", "Conductor", "Servicio al Cliente" }));
 
         jLabel13.setText(" Cargo:");
 
-        campo_registro_direccion.setEditable(false);
         campo_registro_direccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_direccionActionPerformed(evt);
             }
         });
 
-        campo_registro_telefono.setEditable(false);
         campo_registro_telefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_registro_telefonoActionPerformed(evt);
@@ -100,11 +93,11 @@ public class buscar_empleado extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setText(" Dirección:");
+        jLabel15.setText("* Dirección:");
 
-        jLabel16.setText(" Teléfono:");
+        jLabel16.setText("* Teléfono:");
 
-        boton_registrar_usuarios.setText("Modificar");
+        boton_registrar_usuarios.setText("Registrar");
         boton_registrar_usuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_registrar_usuariosActionPerformed(evt);
@@ -112,9 +105,7 @@ public class buscar_empleado extends javax.swing.JFrame {
         });
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setText("BUSCAR EMPLEADOS");
-
-        buscar_empleado_modificar.setText("Buscar");
+        jLabel14.setText("REGISTRO DE EMPLEADOS");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -122,50 +113,48 @@ public class buscar_empleado extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(boton_registrar_usuarios)
-                        .addGap(71, 71, 71))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(104, 104, 104))))
+                .addComponent(jLabel14)
+                .addGap(135, 135, 135))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(buscar_empleado_modificar)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel8)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(0, 339, Short.MAX_VALUE)
+                        .addComponent(boton_registrar_usuarios))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(79, 79, 79)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel10)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(82, 82, 82)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel16)
-                                    .addComponent(jLabel15))))
-                        .addGap(34, 34, 34)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel13))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ComboBox_registro_rol, 0, 194, Short.MAX_VALUE)
-                            .addComponent(campo_registro_nombre)
+                            .addComponent(campo_registro_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                            .addComponent(campo_registro_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(campo_registro_direccion, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
                             .addComponent(campo_registro_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(campo_registro_cedula))))
-                .addContainerGap(31, Short.MAX_VALUE))
+                            .addComponent(ComboBox_registro_rol, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(71, 71, 71))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel14)
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(campo_registro_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(7, 7, 7)
-                .addComponent(buscar_empleado_modificar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(campo_registro_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(campo_registro_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ComboBox_registro_rol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -175,13 +164,16 @@ public class buscar_empleado extends javax.swing.JFrame {
                     .addComponent(campo_registro_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel16)
-                    .addComponent(campo_registro_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(campo_registro_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addGap(27, 27, 27)
                 .addComponent(boton_registrar_usuarios)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/metrocali11.jpg"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -239,28 +231,29 @@ public class buscar_empleado extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         //Verificar campos vaicos
-         if ((campo_registro_nombre.getText().trim().length() != 0) && (campo_registro_cedula.getText().trim().length() != 0) && (campo_registro_direccion.getText().trim().length() != 0) && (campo_registro_telefono.getText().trim().length() != 0)) {
+        if ((campo_registro_nombre.getText().trim().length() != 0) && (campo_registro_cedula.getText().trim().length() != 0)  && (campo_registro_direccion.getText().trim().length() != 0)   && (campo_registro_telefono.getText().trim().length() != 0)) {
 
             /**
-            * Se guarda en las variables cada uno de los campos de la ventana.
-            */
+             * Se guarda en las variables cada uno de los campos de la ventana.
+             */
             String cedula = campo_registro_cedula.getText();
             String nombre = campo_registro_nombre.getText();
             String cargo = (String) ComboBox_registro_rol.getSelectedItem();
             String direccion = campo_registro_direccion.getText();
             String telefono = campo_registro_telefono.getText();
+            
 
             /**
-            * Se realiza la conexion a la base de datos Y se hace el llamado a
-            * registrar usuario con los campos llenos el cual devuelve un
-            * entero donde si es 1, es porque el usuario se registro
-            * correctamente de lo contrario el usuario ya existia y se le
-            * informa al usuario
-            */
-         //   conexion_bd obj_conectarbd = new conexion_bd();
+             * Se realiza la conexion a la base de datos Y se hace el llamado a
+             * registrar usuario con los campos llenos el cual devuelve un
+             * entero donde si es 1, es porque el usuario se registro
+             * correctamente de lo contrario el usuario ya existia y se le
+             * informa al usuario
+             */
+           // conexion_bd obj_conectarbd = new conexion_bd();
 
-            int n=0;
-            //int n = obj_conectarbd.registrar_usuario(cedula,  nombre, cargo, direccion, telefono);
+            int n = 0;
+          //  n = obj_conectarbd.registrar_usuario(cedula, nombre, cargo, direccion, telefono);
 
             if (n == 1) {
                 this.dispose();
@@ -275,6 +268,8 @@ public class buscar_empleado extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(this, "Hay campos vacios, por favor completelos");
         }
+        
+
     }//GEN-LAST:event_boton_registrar_usuariosActionPerformed
 
     /**
@@ -294,20 +289,21 @@ public class buscar_empleado extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(buscar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(buscar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(buscar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(buscar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registrar_empleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new buscar_empleado().setVisible(true);
+                new Registrar_empleado().setVisible(true);
             }
         });
     }
@@ -315,7 +311,6 @@ public class buscar_empleado extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox ComboBox_registro_rol;
     private javax.swing.JToggleButton boton_registrar_usuarios;
-    private javax.swing.JButton buscar_empleado_modificar;
     private javax.swing.JTextField campo_registro_cedula;
     private javax.swing.JTextField campo_registro_direccion;
     private javax.swing.JTextField campo_registro_nombre;
