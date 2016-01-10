@@ -16,7 +16,8 @@ public class Proyecto_masivo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        I_inicio iniciar = new I_inicio ();
+        iniciar.setVisible(true);
     }
     
 }
