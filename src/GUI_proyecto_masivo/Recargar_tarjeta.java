@@ -34,7 +34,7 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         num_tarjeta = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        saldo_tarjeta = new javax.swing.JTextField();
+        recarga_tarjeta = new javax.swing.JTextField();
         recargar_tarjeta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -52,11 +52,11 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Saldo:");
+        jLabel2.setText("Saldo a recargar:");
 
-        saldo_tarjeta.addKeyListener(new java.awt.event.KeyAdapter() {
+        recarga_tarjeta.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                saldo_tarjetaKeyTyped(evt);
+                recarga_tarjetaKeyTyped(evt);
             }
         });
 
@@ -71,6 +71,10 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel43)
+                .addGap(109, 109, 109))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -81,13 +85,9 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(68, 68, 68)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(saldo_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(recarga_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(num_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(26, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel43)
-                .addGap(109, 109, 109))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,10 +101,10 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
-                    .addComponent(saldo_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(recarga_tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(recargar_tarjeta)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -129,13 +129,13 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_num_tarjetaKeyTyped
 
-    private void saldo_tarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saldo_tarjetaKeyTyped
+    private void recarga_tarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_recarga_tarjetaKeyTyped
         // TODO add your handling code here:
         if (!Character.isDigit(evt.getKeyChar()) && !Character.isISOControl(evt.getKeyChar())) {
             Toolkit.getDefaultToolkit().beep();
             evt.consume();
         }
-    }//GEN-LAST:event_saldo_tarjetaKeyTyped
+    }//GEN-LAST:event_recarga_tarjetaKeyTyped
 
     private void recargar_tarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recargar_tarjetaActionPerformed
         // TODO add your handling code here:
@@ -147,7 +147,7 @@ public class Recargar_tarjeta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField num_tarjeta;
+    private javax.swing.JTextField recarga_tarjeta;
     private javax.swing.JButton recargar_tarjeta;
-    private javax.swing.JTextField saldo_tarjeta;
     // End of variables declaration//GEN-END:variables
 }

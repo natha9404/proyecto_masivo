@@ -431,7 +431,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="317" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="boton_registrar_usuarios5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       </Group>
@@ -445,8 +445,8 @@
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="campo_registro_nombre5" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
-                                      <Component id="campo_registro_cedula5" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                      <Component id="campo_registro_nombre" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
+                                      <Component id="campo_registro_cedula" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
@@ -456,8 +456,8 @@
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="campo_registro_direccion5" alignment="0" pref="194" max="32767" attributes="0"/>
-                                      <Component id="campo_registro_telefono5" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                      <Component id="campo_registro_direccion" alignment="0" pref="194" max="32767" attributes="0"/>
+                                      <Component id="campo_registro_telefono" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -475,21 +475,21 @@
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="campo_registro_nombre5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="campo_registro_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="campo_registro_cedula5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="campo_registro_cedula" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="campo_registro_direccion5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="campo_registro_direccion" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="campo_registro_telefono5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="campo_registro_telefono" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
@@ -500,9 +500,9 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="campo_registro_nombre5">
+        <Component class="javax.swing.JTextField" name="campo_registro_nombre">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_nombre5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_nombreActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel38">
@@ -510,10 +510,10 @@
             <Property name="text" type="java.lang.String" value="* Nombre Completo:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="campo_registro_cedula5">
+        <Component class="javax.swing.JTextField" name="campo_registro_cedula">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_cedula5ActionPerformed"/>
-            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="campo_registro_cedula5KeyTyped"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_cedulaActionPerformed"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="campo_registro_cedulaKeyTyped"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel39">
@@ -521,15 +521,15 @@
             <Property name="text" type="java.lang.String" value="* Cedula de Ciudadan&#xed;a:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="campo_registro_direccion5">
+        <Component class="javax.swing.JTextField" name="campo_registro_direccion">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_direccion5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_direccionActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="campo_registro_telefono5">
+        <Component class="javax.swing.JTextField" name="campo_registro_telefono">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_telefono5ActionPerformed"/>
-            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="campo_registro_telefono5KeyTyped"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campo_registro_telefonoActionPerformed"/>
+            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="campo_registro_telefonoKeyTyped"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel41">

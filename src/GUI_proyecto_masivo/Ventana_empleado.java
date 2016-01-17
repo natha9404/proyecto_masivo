@@ -89,7 +89,7 @@ public class Ventana_empleado extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Proyecto Sistema de Transporte Masivo - Gestión de Empleados");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_proyecto_masivo/metrocali11.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/metrocali11.jpg"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
