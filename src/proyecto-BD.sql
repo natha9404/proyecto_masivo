@@ -1,3 +1,16 @@
+﻿DROP TABLE Ruta_Estacion;
+DROP TABLE Conduce;
+DROP TABLE Empleado_Turno;
+DROP TABLE Aborda;
+DROP TABLE Turno;
+DROP TABLE SQR;
+DROP TABLE Pasajero;
+DROP TABLE Tarjeta;
+DROP TABLE Estacion;
+DROP TABLE Empleado;
+DROP TABLE Bus;
+DROP TABLE Ruta;
+
 CREATE TABLE Ruta (
 	nombre_ruta VARCHAR(4) NOT NULL,
 	descripcion TEXT NOT NULL,
@@ -56,7 +69,7 @@ CREATE TABLE Pasajero (
 	cedula_pasajero VARCHAR(10) NOT NULL,
 	nombre VARCHAR(50) NOT NULL,
 	telefono VARCHAR(20) NOT NULL,
-	id_tarjeta VARCHAR(10) NOT NULL,
+	id_tarjeta INTEGER NOT NULL,
 	PRIMARY KEY (cedula_pasajero),
 	FOREIGN KEY (id_tarjeta) REFERENCES Tarjeta(id_tarjeta)
 );
@@ -113,7 +126,7 @@ CREATE TABLE Empleado_Turno (
 	id_turno INTEGER NOT NULL,
 	PRIMARY KEY (cedula_empleado, id_turno),
 	FOREIGN KEY (cedula_empleado) REFERENCES Empleado(cedula_empleado),
-	FOREIGN KEY (id_turno) REFERENCES Turno(id_turno),
+	FOREIGN KEY (id_turno) REFERENCES Turno(id_turno)
 );
 
 
