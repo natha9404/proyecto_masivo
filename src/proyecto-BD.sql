@@ -45,7 +45,7 @@ CREATE TABLE Tarjeta (
 	deuda DOUBLE PRECISION NOT NULL,
 	cedula_empleado VARCHAR(10) NOT NULL,
 	nombre_estacion VARCHAR(20) NOT NULL,
-	PRIMARY KEY (cedula_pasajero),
+	PRIMARY KEY (id_tarjeta),
 	FOREIGN KEY (cedula_empleado) REFERENCES Empleado(cedula_empleado),
 	FOREIGN KEY (nombre_estacion) REFERENCES Estacion(nombre_estacion)
 );
@@ -86,7 +86,7 @@ CREATE TABLE SQR (
 
 
 CREATE SEQUENCE turno_id
-STAR 001
+START 001
 increment by 1;
 
 CREATE TABLE Turno (
