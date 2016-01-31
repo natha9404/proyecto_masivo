@@ -262,7 +262,7 @@ public class I_inicio extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-<<<<<<< HEAD
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         Ventana_buses obj = new Ventana_buses();
@@ -270,13 +270,11 @@ public class I_inicio extends javax.swing.JFrame {
         this.setVisible(false); 
     }//GEN-LAST:event_jButton3ActionPerformed
 
-=======
->>>>>>> origin/master
+
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-<<<<<<< HEAD
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         Ventana_empleado obj = new Ventana_empleado();
@@ -307,8 +305,7 @@ public class I_inicio extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton8ActionPerformed
 
-=======
->>>>>>> origin/master
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

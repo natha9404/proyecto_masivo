@@ -1,4 +1,10 @@
-﻿DROP TABLE Ruta_Estacion;
+﻿--Aura Cristina Jimenez Cod: 1328837
+--Nathalia Bedoya Hurtado Cod: 1226305
+--Edison Felipe mamian ceron 1224279
+--Eduard Efren Arango Lopez - 1325584
+
+
+DROP TABLE Ruta_Estacion;
 DROP TABLE Conduce;
 DROP TABLE Empleado_Turno;
 DROP TABLE Aborda;
